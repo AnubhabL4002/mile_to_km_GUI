@@ -16,6 +16,7 @@ my_label.grid(row= 0,column=1, padx= 20, pady = (20,50))
 def calculate():
     mile=int(input_box.get())
     km= mile * 1.609344
+    km = round(km, 5)
     label3.config(text=km)
 
 input_box = ttk.Entry(font=("",18,""),width=10)
